@@ -36,4 +36,26 @@
         android:layout_marginTop="42dp"
         android:id="@+id/wilhelm" />
 
+    <Button
+        android:text="Jeopardy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wilhelm"
+        android:layout_alignLeft="@+id/wilhelm"
+        android:layout_alignStart="@+id/wilhelm"
+        android:layout_marginTop="41dp"
+        android:id="@+id/jeopardy" />
+
+    <Button
+        android:text="Jeopardy Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/j_stop"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_alignBaseline="@+id/jeopardy"
+        android:layout_alignBottom="@+id/jeopardy"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>

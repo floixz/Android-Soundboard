@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 playNoice.start();
+
             }
         });
 
@@ -34,7 +35,22 @@ public class MainActivity extends AppCompatActivity {
            }
         });
 
+        final MediaPlayer playJeopardy = MediaPlayer.create(MainActivity.this, R.raw.jeopardy);
+        Button jeopardy = (Button) findViewById(R.id.jeopardy);
+        jeopardy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playJeopardy.start();
+            }
+        });
 
+        Button jStop = (Button) findViewById(R.id.j_stop);
+        jStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                playJeopardy.stop();
+            }
+        });
 
 
     }
